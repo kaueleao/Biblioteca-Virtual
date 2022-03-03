@@ -1,3 +1,4 @@
+import { Livro } from './../livro.model';
 import { LivroService } from './../livro.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -9,6 +10,20 @@ import { Router } from '@angular/router';
 })
 export class LivroCreateComponent implements OnInit {
 
+  livro: Livro = {
+    titulo: '',
+    editora: '',
+    ano: 2000,
+    edicao: '',
+    idioma: '',
+    categoria: '',
+    isbn: '',
+    CDD: '' ,
+    estante: '' ,
+    prateleira: '' ,
+    observacoes: ''
+  }
+
   constructor(private LivroService: LivroService,
     private router:Router ) { }
 
@@ -17,7 +32,10 @@ export class LivroCreateComponent implements OnInit {
   }
 
   createLivro(): void {
+    this.LivroService.create(this.livro).subscribe(()=> {
     this.LivroService.showMenssage('Livro Cadastrado!')
+    this.router.navigate(['/livros'])
+    })
   }
 
   cancel(): void{
