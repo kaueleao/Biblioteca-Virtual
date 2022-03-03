@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,7 +11,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule} from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component';
+import { LivrosCrudComponent } from './views/livros-crud/livros-crud.component';
+import { LivroCreateComponent } from './components/livro/livro-create/livro-create.component';
+import { MatButtonModule} from '@angular/material/button';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -18,7 +25,10 @@ import { MatListModule} from '@angular/material/list';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    LivrosCrudComponent,
+    LivroCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +36,10 @@ import { MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
