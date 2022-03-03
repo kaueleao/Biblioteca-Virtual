@@ -1,7 +1,60 @@
-<button mat-raised-button (click) = "createLivro()" color="primary"> 
-    Salvar
-</button>
+<mat-card>
+    <mat-card-title>Cadastrar Livro</mat-card-title>
 
-<button mat-raised-button (click) = "cancel()"> 
-    Cancelar
-</button>
+        <form>
+
+            <mat-form-field>
+                <input type="text" matInput placeholder="Título do Livro" [(ngModel)]= "livro.titulo" name="titulo">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Editora" [(ngModel)]= "livro.editora" name="editora">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="number" matInput placeholder="Ano da Publicação" [(ngModel)]= "livro.ano" name="ano">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text"  matInput placeholder="Edição" [(ngModel)]= "livro.edicao" name="edicao"> 
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Idioma do Livro" [(ngModel)]= "livro.idioma" name="idioma">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Categoria do Livro" [(ngModel)]= "livro.categoria" name="categoria">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Nº ISBN" [(ngModel)]= "livro.isbn" name="isbn">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="CDD - Decimal de Dewey" [(ngModel)]= "livro.CDD" name="CDD">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Estante" [(ngModel)]= "livro.estante" name="estante">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Prateleira" [(ngModel)]= "livro.prateleira" name="prateleira">
+            </mat-form-field>
+            <br>
+            <mat-form-field> 
+                <textarea matInput placeholder="Observações" [(ngModel)]= "livro.observacoes" name="observacoes"></textarea>
+            </mat-form-field>
+
+        </form>
+
+            <button mat-raised-button (click) = "createLivro()" color="primary"> 
+                 Salvar
+            </button>
+
+            <button mat-raised-button (click) = "cancel()" color="warn"> 
+                Cancelar
+            </button>
+
+</mat-card>
