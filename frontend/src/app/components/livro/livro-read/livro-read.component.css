@@ -1,24 +1,60 @@
-.inANDout table {
-    text-transform: uppercase;
-    border-spacing: 0px;
-    border-collapse: separate;
-    margin: 0 auto;
-    color: #595c62;
-    font-size: 0.6em;
-    font-family: 'verdana';
-    text-align: center;
-    width: 100%;
-    display: block;
+.styled-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.inANDout table .top td, .inANDout table .dados:last-of-type td{
-  border-bottom: 2px solid #595c62;
- 
+.styled-table thead tr {
+  background-color: #1E90FF;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.3em;
 }
-.inANDout table td{
-  border-left: 2px solid #595c62;
-  padding:1em;
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #1E90FF;
 }
-.inANDout table td:first-of-type{
-  border-left: none;
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #dbedff;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1E90FF;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #000000;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+#divBusca{
+  background-color:transparent;
+  border:solid 5px #1E90FF;
+  border-radius:10px;
+  width:500px;
+  height:32px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-right:165px;
+  font-size:18px;
+  border:none;
+  height:30px;
+  width:300px;
+  outline: none;
+}
+
+#divBusca img{
+  float:left;
 }

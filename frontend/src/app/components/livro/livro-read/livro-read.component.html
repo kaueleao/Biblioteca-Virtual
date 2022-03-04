@@ -1,33 +1,38 @@
-    <div class="inANDout">
-        <table>
+    <div>
+        <div id="divBusca">
+            <img src="assets/img/search.svg" alt="Buscar..."/>
+        <input id="txtBusca" type="text" placeholder="Buscar Cadastro de Livro..." [(ngModel)]="filter" />
+        </div>
+        <table class="styled-table">
             <thead>
-                <tr class="top">
-                    <th class="inANDoutTitulo">Titulo</th>
-                    <th class="inANDoutEditora">Editora</th>
-                    <th class="inANDoutAno">Ano</th>
-                    <th class="inANDoutEdicao">Edição</th>
-                    <th class="inANDoutIdioma">Idioma</th>
-                    <th class="inANDoutCategoria">Categoria</th>
-                    <th class="inANDoutISBN">ISBN</th>
-                    <th class="inANDoutCDD">CDD</th>
-                    <th class="inANDoutEstante">Estante</th>
-                    <th class="inANDoutPrateleira">Prateleira</th>
-                    <th class="inANDoutObservacoes">Observações</th>
+                <tr>
+                    <th>Titulo do Livro</th>
+                    <!--<th>Autor</th> -->
+                    <th>Editora</th>
+                    <th>Ano</th>
+                    <th>Edição</th>
+                    <th>Idioma</th>
+                    <th>Categoria</th>
+                    <th>ISBN</th>
+                    <th>CDD</th>
+                    <th>Estante</th>
+                    <th>Prateleira</th>
+                    <th>Observações</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="dados" *ngFor="let livro of livros">
-                    <td class="dadosTitulo">{{ livro.titulo }}</td>
-                    <td class="dadosEditora">{{ livro.editora }}</td>
-                    <td class="dadosAno">{{ livro.ano }}</td>
-                    <td class="dadosEdicao">{{ livro.edicao }}</td>
-                    <td class="dadosIdioma">{{ livro.idioma }}</td>
-                    <td class="dadosCategoria">{{ livro.categoria }}</td>
-                    <td class="dadosisbn">{{ livro.isbn }}</td>
-                    <td class="dadosCDD">{{ livro.CDD }}</td>
-                    <td class="dadosEstante">{{ livro.estante }}</td>
-                    <td class="dadosPrateleira">{{ livro.prateleira }}</td>
-                    <td class="dadosObservacoes">{{ livro.observacoes }}</td>
+                <tr class="active-row" *ngFor="let livro of livros | filter:filter; let i = index">
+                    <td>{{ livro.titulo }}</td>
+                    <td>{{ livro.editora }}</td>
+                    <td>{{ livro.ano }}</td>
+                    <td>{{ livro.edicao }}</td>
+                    <td>{{ livro.idioma }}</td>
+                    <td>{{ livro.categoria }}</td>
+                    <td>{{ livro.isbn }}</td>
+                    <td>{{ livro.CDD }}</td>
+                    <td>{{ livro.estante }}</td>
+                    <td>{{ livro.prateleira }}</td>
+                    <td>{{ livro.observacoes }}</td>
                 </tr>
             </tbody>
         </table>

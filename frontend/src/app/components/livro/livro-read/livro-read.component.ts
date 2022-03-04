@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class LivroReadComponent implements OnInit {
 
   livros: Livro[] | undefined
-
+  filter: any
   constructor(private livroService: LivroService) { }
 
   ngOnInit(): void {

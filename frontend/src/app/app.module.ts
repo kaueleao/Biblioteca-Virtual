@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
+import { Ng2SearchPipeModule } from "ng2-search-filter"; // Componente para o Filtro
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { LivroReadComponent } from './components/livro/livro-read/livro-read.com
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    Ng2SearchPipeModule //Componente para o Filtro
   ],
   providers: [],
   bootstrap: [AppComponent]
