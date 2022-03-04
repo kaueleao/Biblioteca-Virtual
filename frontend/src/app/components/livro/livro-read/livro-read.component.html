@@ -1,13 +1,13 @@
     <div>
         <div id="divBusca">
             <img src="assets/img/search.svg" alt="Buscar..."/>
-        <input id="txtBusca" type="text" placeholder="Buscar Cadastro de Livro..." [(ngModel)]="filter" />
+        <input id="txtBusca" type="text" placeholder="Buscar Livro por: Titulo/Autor/Categoria..." [(ngModel)]="filter" />
         </div>
         <table class="styled-table">
             <thead>
                 <tr>
                     <th>Titulo do Livro</th>
-                    <!--<th>Autor</th> -->
+                    <th>Autor</th>
                     <th>Editora</th>
                     <th>Ano</th>
                     <th>Edição</th>
@@ -23,6 +23,7 @@
             <tbody>
                 <tr class="active-row" *ngFor="let livro of livros | filter:filter; let i = index">
                     <td>{{ livro.titulo }}</td>
+                    <td>{{ livro.autor }}</td>
                     <td>{{ livro.editora }}</td>
                     <td>{{ livro.ano }}</td>
                     <td>{{ livro.edicao }}</td>

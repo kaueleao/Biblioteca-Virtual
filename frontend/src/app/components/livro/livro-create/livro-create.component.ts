@@ -3,6 +3,7 @@ import { LivroService } from './../livro.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-livro-create',
   templateUrl: './livro-create.component.html',
@@ -12,6 +13,7 @@ export class LivroCreateComponent implements OnInit {
 
   livro: Livro = {
     titulo: '',
+    autor:'',
     editora: '',
     ano: 2000,
     edicao: '',
@@ -33,7 +35,8 @@ export class LivroCreateComponent implements OnInit {
 
   createLivro(): void {
     this.LivroService.create(this.livro).subscribe(()=> {
-    this.LivroService.showMenssage('Livro Cadastrado!')
+    this.LivroService.showMenssage('Livro Cadastrado com Sucesso!')
+    this.LivroService.showMenssage
     this.router.navigate(['/livros'])
     })
   }
