@@ -3,6 +3,7 @@
     {
       "id": 1,
       "titulo": "Delphi 6 - Firebird/Interbase",
+      "autor": "Delphi Inc",
       "editora": "Érica",
       "ano": 2006,
       "edicao": "1º Edição",
@@ -17,6 +18,7 @@
     {
       "id": 2,
       "titulo": "Dominando o Android - Do Básico ao Avançado",
+      "autor": "Google",
       "editora": "Novatec",
       "ano": 2010,
       "edicao": "2º Edição",
@@ -30,6 +32,7 @@
     },
     {
       "titulo": "Metamorfose",
+      "autor": "Franz Kafka",
       "editora": "Teste",
       "ano": 1915,
       "edicao": "9º Edição",
@@ -41,6 +44,21 @@
       "prateleira": "4",
       "observacoes": "Apenas um Teste",
       "id": 3
+    },
+    {
+      "titulo": "Controle da Qualidade",
+      "autor": "Robson Seleme",
+      "editora": "InterSaberes",
+      "ano": 2020,
+      "edicao": "1º Edição",
+      "idioma": "Português",
+      "categoria": "Logistica",
+      "isbn": "978-85-65704-85-4",
+      "CDD": "303.313",
+      "estante": "L",
+      "prateleira": "11",
+      "observacoes": "Livro Faculdade",
+      "id": 4
     }
   ]
 }
