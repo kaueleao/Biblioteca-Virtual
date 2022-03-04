@@ -1,0 +1,24 @@
+.inANDout table {
+    text-transform: uppercase;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin: 0 auto;
+    color: #595c62;
+    font-size: 0.6em;
+    font-family: 'verdana';
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.inANDout table .top td, .inANDout table .dados:last-of-type td{
+  border-bottom: 2px solid #595c62;
+ 
+}
+.inANDout table td{
+  border-left: 2px solid #595c62;
+  padding:1em;
+}
+.inANDout table td:first-of-type{
+  border-left: none;
+}

@@ -25,4 +25,7 @@ export class LivroService {
     return this.http.post<Livro>(this.baseUrl, livro)
   }
 
+  read(): Observable<Livro[]> {
+    return this.http.get<Livro[]>(this.baseUrl)
+  }
 }

@@ -41,20 +41,6 @@
       "prateleira": "4",
       "observacoes": "Apenas um Teste",
       "id": 3
-    },
-    {
-      "titulo": "Controle da Qualidade",
-      "editora": "",
-      "ano": 2000,
-      "edicao": "1º Edição",
-      "idioma": "Português",
-      "categoria": "Logistica",
-      "isbn": "123.456.789",
-      "CDD": "303.313",
-      "estante": "K",
-      "prateleira": "L",
-      "observacoes": "TESTE",
-      "id": 4
     }
   ]
 }
