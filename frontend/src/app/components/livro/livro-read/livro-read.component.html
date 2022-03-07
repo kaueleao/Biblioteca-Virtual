@@ -6,6 +6,7 @@
         <table class="styled-table">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Titulo do Livro</th>
                     <th>Autor</th>
                     <th>Editora</th>
@@ -18,10 +19,12 @@
                     <th>Estante</th>
                     <th>Prateleira</th>
                     <th>Observações</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="active-row" *ngFor="let livro of livros | filter:filter; let i = index">
+                    <td>{{ livro.id }}</td>
                     <td>{{ livro.titulo }}</td>
                     <td>{{ livro.autor }}</td>
                     <td>{{ livro.editora }}</td>
@@ -34,6 +37,18 @@
                     <td>{{ livro.estante }}</td>
                     <td>{{ livro.prateleira }}</td>
                     <td>{{ livro.observacoes }}</td>
+                    <td>
+                        <a routerLink="/livros/update/{{ livro.id }}" class="edit">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                        <a routerLink="" class="delete">
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
+                    </td>
                 </tr>
             </tbody>
         </table>
