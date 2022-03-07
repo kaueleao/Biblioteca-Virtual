@@ -36,7 +36,10 @@ export class LivroUpdateComponent implements OnInit {
   }
 
   updateLivro(): void {
-
+    this.LivroService.update(this.livro).subscribe(() => {
+      this.LivroService.showMenssage('Cadastro do Livro Atualizado com Sucesso!');
+      this.router.navigate(["/livros"])
+    })
   }
 
   cancel(): void{
