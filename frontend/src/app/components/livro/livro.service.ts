@@ -29,4 +29,14 @@ export class LivroService {
   read(): Observable<Livro[]> {
     return this.http.get<Livro[]>(this.baseUrl)
   }
+
+  readById(id: number):Observable<Livro>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Livro>(url)
+  }
+
+  update(livro: Livro): Observable<Livro>{
+    const url = `${this.baseUrl}/${livro.id}`
+    return this.http.put<Livro>(url, livro)
+  }
 }

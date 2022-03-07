@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './views/home/home.component';
 import {LivrosCrudComponent} from './views/livros-crud/livros-crud.component';
+import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
 
 
 const routes: Routes = [{
@@ -15,6 +16,10 @@ const routes: Routes = [{
 {
   path: "livros/create",
   component: LivroCreateComponent
+},
+{
+  path: "livros/update/:id",
+  component: LivroUpdateComponent
 }
 ];
 

@@ -21,7 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
-import { Ng2SearchPipeModule } from "ng2-search-filter"; // Componente para o Filtro
+import { Ng2SearchPipeModule } from "ng2-search-filter";
+import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component'; // Componente para o Filtro
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Ng2SearchPipeModule } from "ng2-search-filter"; // Componente para o Fi
     HomeComponent,
     LivrosCrudComponent,
     LivroCreateComponent,
-    LivroReadComponent
+    LivroReadComponent,
+    LivroUpdateComponent
   ],
   imports: [
     BrowserModule,
