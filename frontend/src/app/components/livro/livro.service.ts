@@ -30,7 +30,7 @@ export class LivroService {
     return this.http.get<Livro[]>(this.baseUrl)
   }
 
-  readById(id: number):Observable<Livro>{
+  readById(id: any):Observable<Livro>{
     const url = `${this.baseUrl}/${id}`
     return this.http.get<Livro>(url)
   }

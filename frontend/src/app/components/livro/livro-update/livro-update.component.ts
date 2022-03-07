@@ -1,4 +1,8 @@
+import { LivroService } from './../livro.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Livro } from '../livro.model';
+
 
 @Component({
   selector: 'app-livro-update',
@@ -7,9 +11,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LivroUpdateComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  livro: Livro = {
+    titulo: '',
+    autor:'',
+    editora: '',
+    ano: 2000,
+    edicao: '',
+    idioma: '',
+    categoria: '',
+    isbn: '',
+    CDD: '' ,
+    estante: '' ,
+    prateleira: '' ,
+    observacoes: ''
   }
 
+  constructor(private LivroService: LivroService, private router:Router, private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id')
+    this.LivroService.readById(id).subscribe(livro => {
+      this.livro = livro
+    });
+  }
+
+  updateLivro(): void {
+
+  }
+
+  cancel(): void{
+    this.LivroService.showMenssage('Processo Cancelado!')
+    this.router.navigate(['/livros'])
+  }
 }
