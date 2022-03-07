@@ -1,7 +1,7 @@
     <div>
         <div id="divBusca">
             <img src="assets/img/search.svg" alt="Buscar..."/>
-        <input id="txtBusca" type="text" placeholder="Buscar Cadastro de Livro" [(ngModel)]="filter" />
+        <input id="txtBusca" type="text" placeholder="Buscar Cadastro de Livro..." [(ngModel)]="filter" />
         </div>
         <table class="styled-table">
             <thead>
@@ -38,7 +38,7 @@
                     <td>{{ livro.prateleira }}</td>
                     <td>{{ livro.observacoes }}</td>
                     <td>
-                        <a routerLink="/livros/update/{{ livro.id }}" class="edit">
+                        <a  routerLink="/livros/update/{{ livro.id }}" class="edit">
                             <i class="material-icons">
                                 edit
                             </i>

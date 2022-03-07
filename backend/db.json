@@ -59,6 +59,21 @@
       "prateleira": "11",
       "observacoes": "Livro Faculdade",
       "id": 4
+    },
+    {
+      "titulo": "teste",
+      "autor": "teste",
+      "editora": "teste",
+      "ano": 2000,
+      "edicao": "5",
+      "idioma": "teste",
+      "categoria": "teste",
+      "isbn": "3.456",
+      "CDD": "3456789",
+      "estante": "Tm",
+      "prateleira": "78",
+      "observacoes": "jladsjksdajklsd",
+      "id": 5
     }
   ]
 }
