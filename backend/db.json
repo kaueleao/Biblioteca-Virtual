@@ -59,6 +59,21 @@
       "prateleira": "11",
       "observacoes": "Livro Faculdade",
       "id": 4
+    },
+    {
+      "titulo": "test",
+      "autor": "tweste",
+      "editora": "t4este",
+      "ano": 2013,
+      "edicao": "5",
+      "idioma": "teste",
+      "categoria": "llll",
+      "isbn": "123456789",
+      "CDD": "12345asdqwe",
+      "estante": "1",
+      "prateleira": "2",
+      "observacoes": "teste",
+      "id": 5
     }
   ]
 }
