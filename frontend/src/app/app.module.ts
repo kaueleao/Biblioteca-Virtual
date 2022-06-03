@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
 import { Ng2SearchPipeModule } from "ng2-search-filter";
 import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component'; // Componente para o Filtro
 
 @NgModule({
@@ -52,7 +53,8 @@ import { LivroDeleteComponent } from './components/livro/livro-delete/livro-dele
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    Ng2SearchPipeModule //Componente para o Filtro
+    ClipboardModule, // Componente para copiar valores via botão
+    Ng2SearchPipeModule // Componente para o Filtro
   ],
   providers: [],
   bootstrap: [AppComponent]
