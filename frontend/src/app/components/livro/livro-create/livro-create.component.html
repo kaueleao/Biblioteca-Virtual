@@ -58,13 +58,16 @@
             <mat-form-field  appearance="outline">
                 <mat-label>Prateleira</mat-label>
                 <input  type="text" matInput placeholder="Prateleira" [(ngModel)]= "livro.prateleira" name="prateleira">
-            </mat-form-field>
-            
-            <mat-form-field  appearance="outline">
-                <mat-label>Observações</mat-label> 
-                <textarea matInput placeholder="Observações" [(ngModel)]= "livro.observacoes" name="observacoes"></textarea>
+            </mat-form-field> 
+        </div>
+
+        <div class="grid3">
+            <mat-form-field  appearance="fill">
+                <mat-label>Sinopse</mat-label> 
+                <textarea matInput placeholder="Sinopse do Livro" [(ngModel)]= "livro.observacoes" name="sinopse"></textarea>
             </mat-form-field>
         </div>
+
         </form>
 
         <div class="btn">

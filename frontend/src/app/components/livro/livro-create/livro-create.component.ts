@@ -45,4 +45,9 @@ export class LivroCreateComponent implements OnInit {
     this.LivroService.showMenssage('Processo Cancelado!')
     this.router.navigate(['/livros'])
   }
+
+  mensagem(): void{
+    this.LivroService.showMenssage('ISBN Copiado!')
+  }
+  
 }
