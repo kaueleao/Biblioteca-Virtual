@@ -59,13 +59,16 @@
                 <mat-label>Prateleira</mat-label>
                 <input  type="text" matInput placeholder="Prateleira" [(ngModel)]= "livro.prateleira" name="prateleira">
             </mat-form-field>
-            
-            <mat-form-field  appearance="outline">
-                <mat-label>Observações</mat-label> 
-                <textarea matInput placeholder="Observações" [(ngModel)]= "livro.observacoes" name="observacoes"></textarea>
+        </div>
+        
+        <div class="grid3">
+            <mat-form-field  appearance="fill">
+                <mat-label>Sinopse</mat-label> 
+                <textarea matInput placeholder="Sinopse do Livro" [(ngModel)]= "livro.observacoes" name="sinopse"></textarea>
             </mat-form-field>
         </div>
-        </form>
+        
+    </form>
 
         <div class="btn">
             <button  mat-raised-button (click) = "createLivro()" color="green"> 
@@ -75,7 +78,7 @@
             <button mat-raised-button (click) = "cancel()" color="warn"> 
                 Cancelar
             </button>
-            <button mat-raised-button cdkCopyToClipboard = "{{livro.isbn}}" class="copy"> 
+            <button mat-raised-button (click) = "mensagem()" cdkCopyToClipboard = "{{livro.isbn}}" class="copy"> 
                 Copiar ISBN
             </button>
         </div>

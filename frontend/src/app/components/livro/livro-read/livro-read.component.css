@@ -1,5 +1,5 @@
 .styled-table{
-    border-collapse: collapse;
+    border-collapse:collapse;
     margin: 25px 0;
     font-size: 1.0em;
     font-family: sans-serif;
@@ -10,7 +10,7 @@
 .styled-table thead tr {
   background-color: #1E90FF;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-size: 1.5em;
 }
 
@@ -33,7 +33,8 @@
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+    padding: 12px 10px;
+    text-align: center;
 }
 
 #divBusca{
@@ -60,7 +61,7 @@
 }
 
 .edit {
-  margin-right: 10px;
+  margin-right:10px;
 } 
 
 .edit > i {
@@ -69,4 +70,10 @@
 
 .delete > i {
   color: #e35e6b
+}
+
+#sinopse{
+  font-weight: bold;
+  color: black;
+  text-align:justify;
 }

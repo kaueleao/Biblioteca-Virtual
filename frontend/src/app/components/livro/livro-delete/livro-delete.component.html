@@ -1,6 +1,5 @@
 <mat-card>
     <mat-card-title>Deseja Excluir Cadastro deste Livro ?</mat-card-title>
-
         <form>
             <div class="grid1">
             <mat-form-field  class="my-form-field" appearance="outline">
@@ -59,12 +58,15 @@
                 <mat-label>Prateleira</mat-label>
                 <input  disabled type="text" matInput placeholder="Prateleira" [value]= "livro.prateleira" name="prateleira">
             </mat-form-field>
-            
-            <mat-form-field  appearance="outline">
-                <mat-label>Observações</mat-label> 
-                <textarea disabled matInput placeholder="Observações" [value]= "livro.observacoes" name="observacoes"></textarea>
+        </div>
+
+        <div class="grid3">
+            <mat-form-field  appearance="fill">
+                <mat-label>Sinopse</mat-label> 
+                <textarea disabled matInput placeholder="Sinopse do Livro" [(ngModel)]= "livro.observacoes" name="sinopse"></textarea>
             </mat-form-field>
         </div>
+
         </form>
 
         <div class="btn">
