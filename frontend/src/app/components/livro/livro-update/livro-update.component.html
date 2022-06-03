@@ -76,7 +76,7 @@
                 Cancelar
             </button>
 
-            <button mat-raised-button cdkCopyToClipboard = "{{livro.isbn}}" class="copy"> 
+            <button mat-raised-button (click) = "mensagem()" cdkCopyToClipboard = "{{livro.isbn}}" class="copy"> 
                 Copiar ISBN
             </button>
         </div>
