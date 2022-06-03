@@ -14,11 +14,11 @@
                     <th>Edição</th>
                     <th>Idioma</th>
                     <th>Categoria</th>
-                    <th>ISBN</th>
                     <th>CDD</th>
                     <th>Estante</th>
                     <th>Prateleira</th>
-                    <th>Observações</th>
+                    <th>ISBN</th>
+                    <th>Sinopse</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -32,18 +32,31 @@
                     <td>{{ livro.edicao }}</td>
                     <td>{{ livro.idioma }}</td>
                     <td>{{ livro.categoria }}</td>
-                    <td>{{ livro.isbn }}</td>
                     <td>{{ livro.CDD }}</td>
-                    <td>{{ livro.estante }}</td>
+                    <td >{{ livro.estante }}</td>
                     <td>{{ livro.prateleira }}</td>
-                    <td>{{ livro.observacoes }}</td>
+                    <td>{{ livro.isbn }}</td>
                     <td>
-                        <a routerLink="/livros/update/{{ livro.id }}" class="edit">
+                        <!--Div para montar o accordion da Sinopse -->
+                        <div>
+                            <mat-accordion id="sinopse">
+                                <mat-expansion-panel id="sinopse">
+                                    <mat-expansion-panel-header> 
+                                        <mat-panel-title matTooltip="Abrir Sinopse" id="sinopse">
+                                            Sinopse
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                        {{ livro.observacoes }}   
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                        </div>
+                    <td>
+                        <a matTooltip= "Alterar Cadastro Livro" routerLink="/livros/update/{{ livro.id }}" class="edit">
                             <i class="material-icons">
                                 edit
                             </i>
                         </a>
-                        <a routerLink="/livros/delete/{{ livro.id }}" class="delete">
+                        <a matTooltip= "Deletar Cadastro Livro" routerLink="/livros/delete/{{ livro.id }}" class="delete">
                             <i class="material-icons">
                                 delete
                             </i>

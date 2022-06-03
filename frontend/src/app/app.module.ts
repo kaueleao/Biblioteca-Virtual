@@ -21,10 +21,12 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
-import { Ng2SearchPipeModule } from "ng2-search-filter";
+import { Ng2SearchPipeModule } from "ng2-search-filter"; // Componente para o Filtro
 import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
-import {ClipboardModule} from '@angular/cdk/clipboard';
-import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component'; // Componente para o Filtro
+import {ClipboardModule} from '@angular/cdk/clipboard'; // Componente para função copiar no botão
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component'; 
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { LivroDeleteComponent } from './components/livro/livro-delete/livro-dele
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTooltipModule,
+    MatExpansionModule, // Componente para Accordion
     ClipboardModule, // Componente para copiar valores via botão
     Ng2SearchPipeModule // Componente para o Filtro
   ],
