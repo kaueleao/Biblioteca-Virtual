@@ -1,7 +1,7 @@
     <div>
         <div id="divBusca">
             <img src="assets/img/search.svg" alt="Buscar..."/>
-        <input id="txtBusca" type="text" placeholder="Buscar Cadastro de Livro..." [(ngModel)]="filter" />
+        <input id="txtBusca" type="text" placeholder="Buscar Cadastro do Livro..." [(ngModel)]="filter" />
         </div>
         <table class="styled-table">
             <thead>
@@ -50,6 +50,7 @@
                                 </mat-expansion-panel>
                             </mat-accordion>
                         </div>
+                    </td>
                     <td>
                         <a matTooltip= "Alterar Cadastro Livro" routerLink="/livros/update/{{ livro.id }}" class="edit">
                             <i class="material-icons">
