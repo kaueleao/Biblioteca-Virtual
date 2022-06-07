@@ -26,7 +26,8 @@ import { LivroUpdateComponent } from './components/livro/livro-update/livro-upda
 import {ClipboardModule} from '@angular/cdk/clipboard'; // Componente para função copiar no botão
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component'; 
+import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component';
+import { LivroConsultaComponent } from './components/livro/livro-consulta/livro-consulta.component'; 
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LivroDeleteComponent } from './components/livro/livro-delete/livro-dele
     LivroCreateComponent,
     LivroReadComponent,
     LivroUpdateComponent,
-    LivroDeleteComponent
+    LivroDeleteComponent,
+    LivroConsultaComponent
   ],
   imports: [
     BrowserModule,
