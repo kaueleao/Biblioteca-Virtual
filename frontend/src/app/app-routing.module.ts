@@ -1,3 +1,4 @@
+import { LivroLoginComponent } from './components/livro/livro-login/livro-login.component';
 import { LivroConsultaComponent } from './components/livro/livro-consulta/livro-consulta.component';
 import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component';
 import { LivroCreateComponent } from './components/livro/livro-create/livro-create.component';
@@ -30,6 +31,10 @@ const routes: Routes = [{
 {
   path: "livros/consulta",
   component: LivroConsultaComponent
+},
+{
+  path: "login",
+  component: LivroLoginComponent
 }
 ];
 
