@@ -27,7 +27,8 @@ import {ClipboardModule} from '@angular/cdk/clipboard'; // Componente para funç
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { LivroDeleteComponent } from './components/livro/livro-delete/livro-delete.component';
-import { LivroConsultaComponent } from './components/livro/livro-consulta/livro-consulta.component'; 
+import { LivroConsultaComponent } from './components/livro/livro-consulta/livro-consulta.component';
+import { LivroLoginComponent } from './components/livro/livro-login/livro-login.component'; 
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { LivroConsultaComponent } from './components/livro/livro-consulta/livro-
     LivroReadComponent,
     LivroUpdateComponent,
     LivroDeleteComponent,
-    LivroConsultaComponent
+    LivroConsultaComponent,
+    LivroLoginComponent
   ],
   imports: [
     BrowserModule,
