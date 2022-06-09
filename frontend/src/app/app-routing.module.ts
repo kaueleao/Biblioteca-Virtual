@@ -11,7 +11,7 @@ import { LivroUpdateComponent } from './components/livro/livro-update/livro-upda
 
 const routes: Routes = [{
   path: "",
-  component: HomeComponent
+  component: LivroLoginComponent
 },{
   path: "livros",
   component: LivrosCrudComponent
@@ -33,8 +33,8 @@ const routes: Routes = [{
   component: LivroConsultaComponent
 },
 {
-  path: "login",
-  component: LivroLoginComponent
+  path: "home",
+  component: HomeComponent
 }
 ];
 
