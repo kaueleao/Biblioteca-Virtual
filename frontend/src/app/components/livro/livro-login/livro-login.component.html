@@ -4,13 +4,13 @@
     <div>
       <mat-form-field appearance="outline">
         <mat-label>Usuário</mat-label>
-        <input type="text" matInput placeholder="Informe o Usuário" id="usuario" class="validate">
+        <input type="text" matInput placeholder="Informe o Usuário" name="usuario" [(ngModel)] = "usuario">
     </mat-form-field>
     </div>
     <div>
       <mat-form-field appearance="outline">
         <mat-label>Senha</mat-label>
-        <input type="password" matInput placeholder="Informe a Senha" id="senha" class="validate">
+        <input type="password" matInput placeholder="Informe a Senha" name="senha" [(ngModel)] = "senha">
     </mat-form-field>
     </div>
     
