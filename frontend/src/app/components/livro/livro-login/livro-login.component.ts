@@ -22,7 +22,7 @@ export class LivroLoginComponent implements OnInit {
     
     if(this.usuario == "biblioteca" && this.senha == "admin123") // Usuário administrador
     {
-      this.router.navigate(['/'])
+      this.router.navigate(['/home'])
       this.LivroService.showMenssage('Login Efetuado!'); 
     }
     
