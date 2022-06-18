@@ -1,15 +1,15 @@
 <mat-card>
-    <mat-card-title>Deseja Excluir Cadastro deste Livro ?</mat-card-title>
+    <mat-card-title>Deseja Excluir Cadastro desta Obra ?</mat-card-title>
         <form>
             <div class="grid1">
             <mat-form-field  class="my-form-field" appearance="outline">
-                <mat-label>Título do Livro</mat-label>
-                <input disabled type="text" matInput placeholder="Título do Livro" [value]= "livro.titulo" name="titulo">
+                <mat-label>Título da Obra</mat-label>
+                <input disabled type="text" matInput placeholder="Título da Obra" [value]= "livro.titulo" name="titulo">
             </mat-form-field>
             
             <mat-form-field  appearance="outline">
-                <mat-label>Autor do Livro</mat-label>
-                <input disabled type="text" matInput placeholder="Autor do Livro" [value]= "livro.autor" name="autor">
+                <mat-label>Autor da Obra</mat-label>
+                <input disabled type="text" matInput placeholder="Autor da Obra" [value]= "livro.autor" name="autor">
             </mat-form-field>
             
             <mat-form-field  appearance="outline">
@@ -28,15 +28,15 @@
             </mat-form-field>
             
             <mat-form-field  appearance="outline">
-                <mat-label>Idioma do Livro</mat-label>
-                <input disabled type="text" matInput placeholder="Idioma do Livro" [value]= "livro.idioma" name="idioma">
+                <mat-label>Idioma da Obra</mat-label>
+                <input disabled type="text" matInput placeholder="Idioma da Obra" [value]= "livro.idioma" name="idioma">
             </mat-form-field>
         </div>
             
             <div class="grid2">
             <mat-form-field  appearance="outline">
-                <mat-label>Categoria do Livro</mat-label> 
-                <input disabled type="text" matInput placeholder="Categoria do Livro" [value]= "livro.categoria" name="categoria">
+                <mat-label>Categoria da Obra</mat-label> 
+                <input disabled type="text" matInput placeholder="Categoria da Obra" [value]= "livro.categoria" name="categoria">
             </mat-form-field>
             
             <mat-form-field  appearance="outline">
@@ -63,7 +63,7 @@
         <div class="grid3">
             <mat-form-field  appearance="fill">
                 <mat-label>Sinopse</mat-label> 
-                <textarea disabled matInput placeholder="Sinopse do Livro" [(ngModel)]= "livro.observacoes" name="sinopse"></textarea>
+                <textarea disabled matInput placeholder="Sinopse da Obra" [(ngModel)]= "livro.observacoes" name="sinopse"></textarea>
             </mat-form-field>
         </div>
 
