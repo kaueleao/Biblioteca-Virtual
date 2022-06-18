@@ -1,13 +1,13 @@
     <div>
         <div id="divBusca">
             <img src="assets/img/search.svg" alt="Buscar..."/>
-        <input id="txtBusca" type="text" placeholder="Buscar Cadastro do Livro..." [(ngModel)]="filter" />
+        <input id="txtBusca" type="text" placeholder="Buscar Cadastro da Obra..." [(ngModel)]="filter" />
         </div>
         <table class="styled-table">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Titulo do Livro</th>
+                    <th>Titulo da Obra</th>
                     <th>Autor</th>
                     <th>Editora</th>
                     <th>Ano</th>
@@ -52,12 +52,12 @@
                         </div>
                     </td>
                     <td>
-                        <a matTooltip= "Alterar Cadastro Livro" routerLink="/livros/update/{{ livro.id }}" class="edit">
+                        <a matTooltip= "Alterar Cadastro da Obra" routerLink="/livros/update/{{ livro.id }}" class="edit">
                             <i class="material-icons">
                                 edit
                             </i>
                         </a>
-                        <a matTooltip= "Deletar Cadastro Livro" routerLink="/livros/delete/{{ livro.id }}" class="delete">
+                        <a matTooltip= "Deletar Cadastro da Obra" routerLink="/livros/delete/{{ livro.id }}" class="delete">
                             <i class="material-icons">
                                 delete
                             </i>

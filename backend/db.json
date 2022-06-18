@@ -13,7 +13,7 @@
       "CDD": "303.483",
       "estante": "I",
       "prateleira": "6",
-      "observacoes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
+      "observacoes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
       "id": 2,
@@ -61,18 +61,18 @@
       "id": 4
     },
     {
-      "titulo": "teste",
-      "autor": "teste",
-      "editora": "teste",
+      "titulo": "Teste",
+      "autor": "sad",
+      "editora": "asd",
       "ano": 2000,
-      "edicao": "5",
-      "idioma": "teste",
-      "categoria": "teste",
-      "isbn": "3.456",
-      "CDD": "3456789",
-      "estante": "Tm",
-      "prateleira": "78",
-      "observacoes": "jladsjksdajklsd",
+      "edicao": "1º Edição",
+      "idioma": "",
+      "categoria": "Teste 13",
+      "isbn": "1111",
+      "CDD": "147.258.369",
+      "estante": "K",
+      "prateleira": "11",
+      "observacoes": "Ajustado",
       "id": 5
     }
   ]
